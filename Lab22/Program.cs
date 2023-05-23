@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -82,7 +82,7 @@ namespace Lab22
             Action<Task, object> actionTask = new Action<Task, object>(Method2);
             Task task2 = task1.ContinueWith(actionTask, 100);
             task1.Start();
-            //Console.WriteLine(task.Result);
+            //Console.WriteLine(task.Result); 
             Console.WriteLine("Main окончил работу");
             Console.ReadKey();
         }
